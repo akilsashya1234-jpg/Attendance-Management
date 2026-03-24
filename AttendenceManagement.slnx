@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AttendanceManagementInfrastructure/AttendanceManagementInfrastructure.csproj" />
+  <Project Path="AttendenceManagement/AttendenceManagementAPI.csproj" />
+  <Project Path="AttendenceManagementApplication/AttendenceManagementApplication.csproj" />
+  <Project Path="AttendenceManagementDomain/AttendenceManagementDomain.csproj" />
+</Solution>
