@@ -51,8 +51,9 @@ namespace AttendanceManagementInfrastructure.Dbcontext
 
             // ✅ Attendance → RecordedBy (correct already)
             modelBuilder.Entity<Attendance>()
+                //modelBuilder.Entity<Attendance>()
                 .HasOne(a => a.RecordedUser)
-                .WithMany(u => u.RecordedBy)
+                .WithMany(u => u.RecordedAttendances)
                 .HasForeignKey(a => a.RecordedBy)
                 .OnDelete(DeleteBehavior.Restrict);
         }

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace AttendenceManagementApplication.Mapper
 {
-    public class RoleProfile : Profile
+    public class RoleProfile: Profile
     {
         public RoleProfile()
         {

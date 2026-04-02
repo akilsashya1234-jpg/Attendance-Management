@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AttendanceManagementInfrastructure.Migrations
 {
     [DbContext(typeof(AttendanceDbContext))]
-    [Migration("20260321163457_Create")]
-    partial class Create
+    [Migration("20260330043210_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,11 +48,16 @@ namespace AttendanceManagementInfrastructure.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UserId1")
+                        .HasColumnType("int");
+
                     b.HasKey("AttendanceId");
 
                     b.HasIndex("RecordedBy");
 
                     b.HasIndex("UserId");
+
+                    b.HasIndex("UserId1");
 
                     b.ToTable("Attendances");
                 });
@@ -154,7 +159,7 @@ namespace AttendanceManagementInfrastructure.Migrations
             modelBuilder.Entity("AttendenceManagementDomain.Entity.Attendance", b =>
                 {
                     b.HasOne("AttendenceManagementDomain.Entity.User", "RecordedUser")
-                        .WithMany("RecordedBy")
+                        .WithMany("RecordedAttendances")
                         .HasForeignKey("RecordedBy")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -164,6 +169,10 @@ namespace AttendanceManagementInfrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.HasOne("AttendenceManagementDomain.Entity.User", null)
+                        .WithMany("RecordedBy")
+                        .HasForeignKey("UserId1");
 
                     b.Navigation("RecordedUser");
 
@@ -200,6 +209,8 @@ namespace AttendanceManagementInfrastructure.Migrations
             modelBuilder.Entity("AttendenceManagementDomain.Entity.User", b =>
                 {
                     b.Navigation("Attendances");
+
+                    b.Navigation("RecordedAttendances");
 
                     b.Navigation("RecordedBy");
 

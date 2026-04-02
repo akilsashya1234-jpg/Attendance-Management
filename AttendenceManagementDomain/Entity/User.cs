@@ -24,6 +24,6 @@ namespace AttendenceManagementDomain.Entity
         public UserDetails? UserDetails { get; set; }
         public ICollection<Attendance> Attendances { get; set; } = new List<Attendance>();
         public ICollection<Attendance> RecordedBy { get; set; } = new List<Attendance>();
-        //public ICollection<Attendance> RecordedAttendances { get; set; } = new List<Attendance>();
+        public ICollection<Attendance> RecordedAttendances { get; set; } = new List<Attendance>();
     }
 }

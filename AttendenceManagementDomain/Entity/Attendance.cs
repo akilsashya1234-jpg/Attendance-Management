@@ -17,10 +17,10 @@ namespace AttendenceManagementDomain.Entity
         public string? Status { get; set; } = string.Empty;
         public string? Course { get; set; } = string.Empty;
 
-        [ForeignKey("UserId")]
+        //[ForeignKey("UserId")]
         public User? User { get; set; }
 
-        [ForeignKey("RecordedBy")]
+        //[ForeignKey("RecordedBy")]
         public User? RecordedUser { get; set; }
     }
 }

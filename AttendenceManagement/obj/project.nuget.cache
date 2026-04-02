@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "awH68mLC+Rw=",
+  "dgSpecHash": "vdhr8BnKf4s=",
   "success": true,
-  "projectFilePath": "D:\\AttendenceManagement\\AttendenceManagement\\AttendenceManagementAPI.csproj",
+  "projectFilePath": "D:\\Frontend\\WebApi\\AttendenceManagement\\AttendenceManagement\\AttendenceManagementAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akils\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\akils\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -64,18 +64,5 @@
     "C:\\Users\\akils\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.4\\system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
     "C:\\Users\\akils\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.4\\system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "projectPath": "D:\\AttendenceManagement\\AttendenceManagement\\AttendenceManagementAPI.csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\AttendenceManagement\\AttendenceManagement\\AttendenceManagementAPI.csproj",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

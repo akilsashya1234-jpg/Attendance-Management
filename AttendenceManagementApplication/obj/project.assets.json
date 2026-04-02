@@ -1361,7 +1361,6 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "AttendenceManagementDomain": "1.0.0",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Microsoft.EntityFrameworkCore": "10.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.5",
           "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "8.0.0",
@@ -3946,11 +3945,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AttendenceManagement\\AttendenceManagementApplication\\AttendenceManagementApplication.csproj",
+      "projectUniqueName": "D:\\Frontend\\WebApi\\AttendenceManagement\\AttendenceManagementApplication\\AttendenceManagementApplication.csproj",
       "projectName": "AttendenceManagementApplication",
-      "projectPath": "D:\\AttendenceManagement\\AttendenceManagementApplication\\AttendenceManagementApplication.csproj",
+      "projectPath": "D:\\Frontend\\WebApi\\AttendenceManagement\\AttendenceManagementApplication\\AttendenceManagementApplication.csproj",
       "packagesPath": "C:\\Users\\akils\\.nuget\\packages\\",
-      "outputPath": "D:\\AttendenceManagement\\AttendenceManagementApplication\\obj\\",
+      "outputPath": "D:\\Frontend\\WebApi\\AttendenceManagement\\AttendenceManagementApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3971,16 +3970,19 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\AttendenceManagement\\AttendanceManagementInfrastructure\\AttendanceManagementInfrastructure.csproj": {
-              "projectPath": "D:\\AttendenceManagement\\AttendanceManagementInfrastructure\\AttendanceManagementInfrastructure.csproj"
+            "D:\\Frontend\\WebApi\\AttendenceManagement\\AttendanceManagementInfrastructure\\AttendanceManagementInfrastructure.csproj": {
+              "projectPath": "D:\\Frontend\\WebApi\\AttendenceManagement\\AttendanceManagementInfrastructure\\AttendanceManagementInfrastructure.csproj"
             },
-            "D:\\AttendenceManagement\\AttendenceManagementDomain\\AttendenceManagementDomain.csproj": {
-              "projectPath": "D:\\AttendenceManagement\\AttendenceManagementDomain\\AttendenceManagementDomain.csproj"
+            "D:\\Frontend\\WebApi\\AttendenceManagement\\AttendenceManagementDomain\\AttendenceManagementDomain.csproj": {
+              "projectPath": "D:\\Frontend\\WebApi\\AttendenceManagement\\AttendenceManagementDomain\\AttendenceManagementDomain.csproj"
             }
           }
         }
       },
       "warningProperties": {
+        "noWarn": [
+          "NU1903"
+        ],
         "warnAsError": [
           "NU1605"
         ]
@@ -4035,7 +4037,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -4312,17 +4314,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  }
 }
